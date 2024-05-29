@@ -1,0 +1,17 @@
+<nav id="sidenav" class="py-6">
+    <ul class="flex space-x-2  sm:space-x-20 justify-center mr-2 capitalize font-semibold text-xs text-white sm:text-xs md:text-sm lg:text-lg ">
+        <li><a href="<?= base_url('kelas')  ?>" class="duration-150 hover:border-b-2 hover:border-b-blue-600">Home</a></li>
+        <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="flex items-center duration-150 hover:border-b-2 hover:border-b-blue-600" type="button">Product<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+            </svg>
+        </button>
+        <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60">
+            <ul class="py-2 text-sm text-black text-center" aria-labelledby="dropdownHoverButton">
+                <li>
+                    <a href="<?= base_url('kelas/kelas_live')  ?>" class="block rounded-full px-4 py-2 hover:bg-gray-50">Kelas Live Dengan Mentor</a>
+                </li>
+            </ul>
+        </div>
+        <li><a href="<?= base_url('tentang/about')  ?>" class="duration-150 hover:border-b-2 hover:border-b-blue-600">about coding skuy</a></li>
+    </ul>
+</nav>
