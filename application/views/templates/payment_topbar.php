@@ -1,5 +1,5 @@
 <div class="container-fluid m-0 p-0 content-wrapper">
-    <header class="bg-blue-900">
+    <header class=" bg-blue-900 p-2">
         <div class="mx-auto max-w-screen-5xl px-4 sm:px-6 lg:px-8">
             <div class="sm:flex sm:items-center sm:justify-between">
                 <div class="flex flex-row justify-center sm:flex-row items-center sm:text-left">
@@ -10,19 +10,19 @@
                 </div>
                 <nav class="">
                     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
-                        <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 -translate-y-[38px] sm:-translate-y-0 -translate-x-5 sm:-translate-x-0" aria-controls="navbar-dropdown" aria-expanded="false">
+                        <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 -translate-y-[38px] sm:-translate-y-0 -translate-x-5 sm:-translate-x-0" aria-controls="navbar-dropdown" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
                             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
                             </svg>
                         </button>
-                        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-                            <ul class="flex flex-col font-medium md:p-0 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
-                                <li>
-                                    <a href="<?= base_url('kelas') ?>" class="block py-2 px-3 text-white duration-150 hover:border-b-2 hover:border-b-blue-600 md:bg-transparent md:p-0 " aria-current="page">Home</a>
+                        <div class="hidden w-screen md:block md:w-auto" id="navbar-dropdown">
+                            <ul class="flex flex-col items-center font-medium md:p-0 md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0">
+                                <li >
+                                    <a href="<?= base_url('kelas') ?>" class="block px-3 text-white duration-150 hover:border-b hover:border-b-blue-600 md:bg-transparent md:p-0 " aria-current="page">Home</a>
                                 </li>
                                 <li>
-                                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex duration-150 hover:border-b-2 hover:border-b-blue-600 items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto dark:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Product<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex duration-150 hover:border-b hover:border-b-blue-600 items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto dark:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Product<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
                                         </svg></button>
                                     <!-- Dropdown menu -->
@@ -35,14 +35,14 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="<?= base_url('tentang/about')  ?>" class="block duration-150 hover:border-b-2 hover:border-b-blue-600 py-2 px-3 text-white capitalize">about coding skuy</a>
+                                    <a href="<?= base_url('tentang/about')  ?>" class="block duration-150 hover:border-b hover:border-b-blue-600  px-3 text-white capitalize">about coding skuy</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
 
-                <div class=" sm:mt-0 sm:flex-row py-4 flex justify-center sm:items-center">
+                <div class=" sm:flex-row flex justify-center sm:items-center">
                     <div class="relative">
                         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="gap-2 text-white font-medium text-sm px-5 text-center inline-flex items-center" type="button"><?= $user['nama'];  ?>
                             <img src="<?= base_url('vendor/img/profile/') . $user['image'];  ?>" alt="" class="rounded-full w-8 h-8 order-first ">
@@ -56,9 +56,7 @@
                                 <li>
                                     <a href="<?= base_url('kelas/cara_bayar');  ?>" class="block px-4 py-2 dark:hover:bg-gray-600 dark:hover:text-white">FAQ</a>
                                 </li>
-                                <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                                </li>
+                                
                                 <li>
                                     <a href="<?= base_url('auth/logout'); ?>" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Logout</a>
                                 </li>

@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
     <a href="#" class="mt-4 mx-w-xl mx-auto block max-w-sm p-8 bg-slate-100 border border-gray-200 rounded-lg shadow hover:cursor-default">
 
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-700">Pembayaran Materi</h5>

@@ -1,7 +1,7 @@
 <!-- Wrapper -->
 <div class="container-fluid m-0 p-0 content-wrapper ">
     <!-- Header -->
-    <nav class="p-0 m-0 nav navbar-dark shadow bg-blue-900 shadow-lg fixed-top animate__animated animate__fadeInDown" style="opacity: 0.25;">
+    <nav class="p-0 m-0 nav navbar-dark bg-blue-900 shadow-lg fixed-top animate__animated animate__fadeInDown" style="opacity: 0.25;">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li>
                 <a class="d-flex navbar-brand mt-3 d-flex align-items-center" href="#">
