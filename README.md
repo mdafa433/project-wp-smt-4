@@ -1,2 +1,2 @@
 ﻿# project-wp-smt-4
-# Codeignaiter
+# Mengunakan Framework Codeigniter
